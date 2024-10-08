@@ -40,7 +40,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 signinWithGoogle() async {
   try {
     log('Attempting Google Sign In...');
-    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+    final GoogleSignInAccount? googleUser = await GoogleSignIn(forceCodeForRefreshToken: true).signIn();
     
     if (googleUser == null) {
       log('Google Sign In aborted by user');
