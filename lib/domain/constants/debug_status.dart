@@ -1,4 +1,4 @@
 mixin DebugStatus {
   // ignore:constant_identifier_names
-  static const IS_DEBUG = true;
+  static const IS_DEBUG = false;
 }
