@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  flutter_launcher_icons: ^0.14.1
   dio: ^4.0.4
   firebase_core: ^2.27.0
   firebase_auth: ^4.17.8  # This is compatible with firebase_core 2.27.0
@@ -53,6 +54,11 @@ dependencies:
 
 dev_dependencies:
   build_runner: ^2.3.0
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/gnb_c_logo.png"
+  min_sdk_android: 21 
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

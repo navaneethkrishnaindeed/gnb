@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive/hive.dart';
@@ -18,7 +19,7 @@ import '../infrastructure/local_notification.dart';
 
 // Provider for image list (local captures)
 final imageListProvider = StateNotifierProvider<ImageListNotifier, List<String>>((ref) => ImageListNotifier());
-
+ UserCredential? currentUserCredential;
 class ImageListNotifier extends StateNotifier<List<String>> {
   ImageListNotifier() : super([]);
 

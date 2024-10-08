@@ -9,7 +9,7 @@ import 'domain/dependency_injection/injectable.dart';
 import 'domain/models/image_model.dart';
 import 'infrastructure/local_notification.dart';
 import 'presentation/auth_handler/auth_handler_page.dart';
-import 'presentation/image_gallert.dart';
+import 'presentation/gallery_page/image_gallery.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
